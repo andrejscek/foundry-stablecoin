@@ -35,7 +35,7 @@ contract DeployDSCTest is Test {
     // Price Tests //
     /////////////////
 
-    function testGetUsdValue() public {
+    function testGetUsdValue() public view {
         uint256 ethAmmount = 15e18;
         // 15e18 * 2000/ETH = 30,000e18
         uint256 expectedEthUsdValue = 30_000e18;
