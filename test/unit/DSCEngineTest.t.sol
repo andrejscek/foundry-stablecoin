@@ -54,5 +54,7 @@ contract DeployDSCTest is Test {
 
         vm.expectRevert(DSCEngine.DSCEngine__MustBeMoreThanZero.selector);
         engine.depositCollateral(weth, 0);
+
+        vm.stopPrank();
     }
 }
